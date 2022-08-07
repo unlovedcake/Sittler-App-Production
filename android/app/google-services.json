@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "844208444636",
+    "project_id": "sittler-app-production",
+    "storage_bucket": "sittler-app-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844208444636:android:0e48fdc7ad5f3623689019",
+        "android_client_info": {
+          "package_name": "com.sitller.sittler_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844208444636-e353mh8571212lrv86j5enca5pe63jjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACKSiEniRaTNKuTLNQhc07BWoeDjqOfug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844208444636-e353mh8571212lrv86j5enca5pe63jjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
