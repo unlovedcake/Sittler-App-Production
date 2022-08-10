@@ -61,6 +61,7 @@ class _BookingListState extends State<BookingList> {
     });
 
     return Scaffold(
+      appBar: AppBar(),
       
       body: StreamBuilder(
         stream: FirebaseFirestore.instance

@@ -91,7 +91,7 @@ const staffsettings(),
           body: 
         StreamBuilder(
           stream: FirebaseFirestore.instance
-              .collection("table-staff")
+              .collection("table-sittler")
               .where('email', isEqualTo: user!.email)
               .where('active', isEqualTo: true)
               .snapshots(),
@@ -107,17 +107,23 @@ const staffsettings(),
               return const Text('Error');
             } else if (snapshot.data!.docs.isEmpty) {
               return const Center(
-                  child: Text(
-                      "The admin will confirm your request in order to activate your account.", textAlign: TextAlign.center,));
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                        "The admin will confirm your request in order to activate your account.", textAlign: TextAlign.center,),
+                  ));
             } else {
               return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     addVerticalSpace(10),
-                    const Text(
-                      'Hi, Welcome to Baby Sittler App ',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: const Text(
+                        'Hi, Welcome to Baby Sittler App ',
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      ),
                     ),
                     // addVerticalSpace(50),
                     // ElevatedButtonStyle.elevatedButton("List of Sittlers", onPressed: () {

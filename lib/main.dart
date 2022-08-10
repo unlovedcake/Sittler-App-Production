@@ -192,7 +192,7 @@ class _MyAppState extends State<MyApp> {
               // TODO add a proper drawable resource to android, for now using
               //      one that already exists in example app.
               //styleInformation: bigPictureStyleInformation,  // it will display the url image
-              icon: 'blog',
+              icon: 'img',
 
               //largeIcon: const DrawableResourceAndroidBitmap('ic_launcher'),
             ),
